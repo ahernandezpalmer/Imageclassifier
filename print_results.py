@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: AH
 # DATE CREATED:11_16_2020
-# REVISED DATE: 
+# REVISED DATE: 11/23/2020
 # PURPOSE: Create a function print_results that prints the results statistics
 #          from the results statistics dictionary (results_stats_dic). It 
 #          should also allow the user to be able to print out cases of misclassified
@@ -127,7 +127,7 @@ def print_results(results_dic, results_stats_dic, model,
             #
             # Pet Image Label is a Dog - Classified as NOT-A-DOG -OR- 
             # Pet Image Label is NOT-a-Dog - Classified as a-DOG
-            if (results_dic[key][3]==1 and results_dic[key][4]==0 or (results_dic[key][3]==0 and resuts_dic[key][4]==1)):
+            if (results_dic[key][3]==1 and results_dic[key][4]==0 or (results_dic[key][3]==0 and results_dic[key][4]==1)):
                 print("{:20}:{:20}".format(results_dic[key][0],results_dic[key][1]))
 
     # IF print_incorrect_breed == True AND there were dogs whose breeds 

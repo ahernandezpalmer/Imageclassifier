@@ -152,8 +152,8 @@ def adjust_results4_isadog(results_dic, dogfile):
             else:
                 results_dic[key].extend((0,0))
      
-            for key in results_dic:
-                print("\nFilename=",key,"\npet_image Label=",results_dic[key][0],"\nClassifier Label=",results_dic[key][1],"\nmatch=",results_dic[key][2],"nimage is dog=",results_dic[key][3],"nClassifier is dog=",results_dic[key][4])
+    for key in results_dic:
+        print("\nFilename=",key,"\npet_image Label=",results_dic[key][0],"\nClassifier Label=",results_dic[key][1],"\nmatch=",results_dic[key][2],"nimage is dog=",results_dic[key][3],"nClassifier is dog=",results_dic[key][4])
                       
-            return None
+    return None
     

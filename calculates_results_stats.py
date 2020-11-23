@@ -45,7 +45,7 @@
 def calculates_results_stats(results_dic):
      # Creates empty dictionary for results_stats_dic
     results_stats_dic = dict()
-    results_stats_dic['n_images']=len(results_dic)
+  
     # Sets all counters to initial values of zero so that they can 
     # be incremented while processing through the images in results_dic 
     results_stats_dic['n_dogs_img'] = 0
@@ -123,7 +123,7 @@ def calculates_results_stats(results_dic):
     #    
     # Calculates % correct for matches
     if results_stats_dic['n_images'] != 0:
-        results_stats_dic['pct_match'] = results_stats_dic['n_match']/results_stats_dic['n-images']*100
+        results_stats_dic['pct_match'] = results_stats_dic['n_match']/results_stats_dic['n_images']*100
 
     # TODO: 5d. REPLACE zero(0.0) with CODE that calculates the % of correctly
     #           classified dog images. Recall that this can be calculated by 
@@ -132,7 +132,7 @@ def calculates_results_stats(results_dic):
     #           will need to be multiplied by 100.0 to provide the percentage.
     #    
     # Calculates % correct dogs
-        results_stats_dic['pct_correct_dogs'] = results_dic['n_correct_dogs']/results_dic['n_dogs_img']*100
+        results_stats_dic['pct_correct_dogs'] = results_stats_dic['n_correct_dogs']/results_stats_dic['n_dogs_img']*100
 
     # TODO: 5e. REPLACE zero(0.0) with CODE that calculates the % of correctly
     #           classified breeds of dogs. Recall that this can be calculated 
@@ -141,7 +141,7 @@ def calculates_results_stats(results_dic):
     #           will need to be multiplied by 100.0 to provide the percentage.
     #    
     # Calculates % correct breed of dog
-        results_stats_dic['pct_correct_breed'] = results_dic['n_correct_breed']/results_dic['n_dogs_img']*100
+        results_stats_dic['pct_correct_breed'] = results_stats_dic['n_correct_breed']/results_stats_dic['n_dogs_img']*100
 
     # Calculates % correct not-a-dog images
     # Uses conditional statement for when no 'not a dog' images were submitted 
